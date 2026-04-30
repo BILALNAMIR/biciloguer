@@ -8,10 +8,13 @@ class Bicicleta extends Model
 {
     protected $fillable = ['nom', 'descripcio', 'preu_dia', 'disponible', 'imatge'];
 
-    public function categories() {
+    public function categories()
+    {
         return $this->belongsToMany(Categoria::class, 'bicicleta_categoria');
     }
-    public function lloguers() {
+
+    public function lloguers()
+    {
         return $this->hasMany(Lloguer::class);
     }
 }

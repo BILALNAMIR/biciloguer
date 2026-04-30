@@ -8,7 +8,8 @@ class Categoria extends Model
 {
     protected $fillable = ['nom', 'descripcio'];
 
-    public function bicicletes() {
+    public function bicicletes()
+    {
         return $this->belongsToMany(Bicicleta::class, 'bicicleta_categoria');
     }
 }
