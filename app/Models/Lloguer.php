@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lloguer extends Model
 {
+    protected $table = 'lloguers';
+
     protected $fillable = ['user_id', 'bicicleta_id', 'data_inici', 'data_fi', 'preu_total'];
 
     public function user()

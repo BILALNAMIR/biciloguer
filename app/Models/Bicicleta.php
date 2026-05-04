@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bicicleta extends Model
 {
+    protected $table = 'bicicletes';
+
     protected $fillable = ['nom', 'descripcio', 'preu_dia', 'disponible', 'imatge'];
 
     public function categories()
