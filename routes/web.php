@@ -16,6 +16,8 @@ Route::get('/bicicletes', [BicicletaController::class, 'index'])->name('biciclet
 // Admin - create ABANS dels paràmetres {id}
 Route::middleware(['auth', 'admin'])->group(function () {
 
+    Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('admin.dashboard');
+
     Route::get('/bicicletes/create', [BicicletaController::class, 'create'])->name('bicicletes.create');
     Route::post('/bicicletes', [BicicletaController::class, 'store'])->name('bicicletes.store');
     Route::get('/bicicletes/{bicicleta}/edit', [BicicletaController::class, 'edit'])->name('bicicletes.edit');

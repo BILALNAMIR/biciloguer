@@ -15,8 +15,11 @@
                 <a href="{{ route('bicicletes.index') }}" class="text-gray-700 hover:text-green-700">Bicicletes</a>
                 <a href="{{ route('categories.index') }}" class="text-gray-700 hover:text-green-700">Categories</a>
                 @auth
-                    <a href="{{ route('lloguers.index') }}" class="text-gray-700 hover:text-green-700">Els meus lloguers</a>
+                    <a href="{{ route('lloguers.index') }}" class="text-gray-700 hover:text-green-700">
+                        {{ auth()->user()->isAdmin() ? 'Lloguers' : 'Els meus lloguers' }}
+                    </a>
                     @if(auth()->user()->isAdmin())
+                        <a href="{{ route('admin.dashboard') }}" class="text-gray-700 hover:text-green-700">Dashboard</a>
                         <a href="{{ route('users.index') }}" class="text-gray-700 hover:text-green-700">Usuaris</a>
                     @endif
                     <form method="POST" action="{{ route('logout') }}" class="inline">

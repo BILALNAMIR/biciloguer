@@ -35,7 +35,11 @@
                 </td>
             </tr>
             @empty
-            <tr><td colspan="6" class="px-4 py-6 text-center text-gray-400">No hi ha lloguers.</td></tr>
+            <tr>
+                <td colspan="{{ auth()->user()->isAdmin() ? 6 : 5 }}" class="px-4 py-6 text-center text-gray-400">
+                    No hi ha lloguers.
+                </td>
+            </tr>
             @endforelse
         </tbody>
     </table>

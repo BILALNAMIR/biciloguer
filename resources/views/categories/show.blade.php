@@ -8,7 +8,7 @@
     <div class="bg-white rounded shadow p-4">
         <h3 class="font-semibold">{{ $bicicleta->nom }}</h3>
         <p class="text-green-700">{{ $bicicleta->preu_dia }} €/dia</p>
-        <a href="{{ route('bicicletes.show', $bicicleta) }}" class="text-blue-600 text-sm hover:underline">Veure</a>
+        <a href="{{ route('bicicletes.show', $bicicleta) }}" class="text-blue-600 hover:underline">Veure</a>
     </div>
     @empty
         <p class="text-gray-400">Cap bicicleta en aquesta categoria.</p>

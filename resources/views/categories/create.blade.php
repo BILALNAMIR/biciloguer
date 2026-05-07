@@ -13,7 +13,7 @@
             <label class="block text-sm font-medium mb-1">Descripció</label>
             <textarea name="descripcio" class="w-full border rounded px-3 py-2" rows="3">{{ old('descripcio') }}</textarea>
         </div>
-        <button type="submit" class="bg-green-700 text-white px-6 py-2 rounded w-full">Crear categoria</button>
+        <button type="submit" style="background:#16a34a;color:white;padding:10px 24px;border-radius:6px;width:100%;font-size:15px;">Crear categoria</button>
     </form>
 </div>
 @endsection

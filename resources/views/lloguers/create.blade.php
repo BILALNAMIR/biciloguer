@@ -26,7 +26,7 @@
             <input type="date" name="data_fi" value="{{ old('data_fi') }}" class="w-full border rounded px-3 py-2" required>
             @error('data_fi') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
         </div>
-        <button type="submit" class="bg-green-700 text-white px-6 py-2 rounded w-full">Confirmar lloguer</button>
+        <button type="submit" style="background:#16a34a;color:white;padding:10px 24px;border-radius:6px;width:100%;font-size:15px;">Confirmar lloguer</button>
     </form>
 </div>
 @endsection

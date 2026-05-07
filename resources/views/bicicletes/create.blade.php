@@ -39,7 +39,9 @@
                 @endforeach
             </div>
         </div>
-        <button type="submit" class="bg-green-700 text-white px-6 py-2 rounded w-full">Crear bicicleta</button>
+       <button type="submit" style="background:#16a34a;color:white;padding:10px 24px;border-radius:6px;width:100%;font-size:15px;">
+            Crear bicicleta
+        </button>
     </form>
 </div>
 @endsection

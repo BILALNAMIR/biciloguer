@@ -12,7 +12,9 @@
             <label class="block text-sm font-medium mb-1">Descripció</label>
             <textarea name="descripcio" class="w-full border rounded px-3 py-2" rows="3">{{ old('descripcio', $categoria->descripcio) }}</textarea>
         </div>
-        <button type="submit" class="bg-yellow-500 text-white px-6 py-2 rounded w-full">Actualitzar</button>
+        <button type="submit" style="background:#d97706;color:white;padding:10px 24px;border-radius:6px;width:100%;font-size:15px;">
+            Actualitzar
+        </button>
     </form>
 </div>
 @endsection

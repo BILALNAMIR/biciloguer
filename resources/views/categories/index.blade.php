@@ -18,7 +18,9 @@
                 <a href="{{ route('categories.edit', $categoria) }}" class="text-yellow-600 hover:underline">Editar</a>
                 <form method="POST" action="{{ route('categories.destroy', $categoria) }}" onsubmit="return confirm('Segur?')">
                     @csrf @method('DELETE')
-                    <button class="text-red-600 hover:underline">Eliminar</button>
+                <button type="submit" style="background:#dc2626;color:white;padding:4px 10px;border-radius:4px;font-size:13px;">
+                    Eliminar
+                </button>
                 </form>
             @endif
         </div>

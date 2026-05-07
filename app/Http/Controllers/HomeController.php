@@ -14,4 +14,13 @@ class HomeController extends Controller
             ->get();
         return view('welcome', compact('bicicletes'));
     }
+
+    public function dashboard()
+    {
+        $totalBicicletes = Bicicleta::count();
+
+        return view('admin.dashboard', [
+            'totalBicicletes' => $totalBicicletes,
+        ]);
+    }
 }
